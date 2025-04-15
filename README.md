@@ -9,10 +9,12 @@ Discussion
 
 Running AI models for object detection works really well with parallel processing. That’s because each video frame can be handled on its own, and even within a single frame, we can split the work, like cleaning up the image, running the AI model, and drawing boxes around detected objects, so it all happens at the same time across different parts of the hardware.
 The NVIDIA Jetson family, like the Jetson Orin Nano, is built for this kind of job. These devices have special parts like CUDA cores, Tensor cores, and AI accelerators that help take some of the load off the CPU and let things run much faster.
+
 For this project, we explored some tools in NVIDIA’s ecosystem to help us out:
 •	CUDA Toolkit: Helps us run tasks in parallel more efficiently.
 •	TensorRT: Speeds up AI model inference by making it lighter and faster to run.
 •	OpenCV: Takes care of handling the camera, images, and drawing results.
 •	YOLOv5: A popular object detection model that works well even on small devices like ours.
 •	Nsight Systems and Nsight Compute: Tools that let us measure performance and see where things might be slowing down.
+
 By using the Jetson Orin Nano, we want to prove that we can run object detection in real-time on a small, portable device without needing the cloud. If it works well, this kind of setup could be used in lots of real-world projects where speed and mobility are important.
