@@ -39,3 +39,34 @@ One thing that went really well was getting the object detection to run in real 
 The hardest part was setting up the Jetson environment. There were so many small version issues, like CUDA not matching the right version of PyTorch, and it took a lot of Googling, trial and error, and reading forum threads to get everything working. Another challenge was making sure the live camera feed didn’t slow everything down, especially since the Jetson has limited resources compared to a regular computer.
 
 I took the lead on setting up the Jetson, making sure all the dependencies and software were installed properly. I also built and tested the object detection system and helped fix problems along the way. I spent a lot of time looking up solutions, testing different fixes, and figuring out how to apply them to our setup. I feel like I really owned that part of the project.
+
+
+# Roberto Sejas
+## Reflection
+During this project, I gained more understanding in deploying AI models, more specifically object detection models, on embedded systems like the Jetson Nano. Our initial goal was to implement YOLOv5 for  object detection, trying to use the GPU available. But we had compatibility issues with CUDA, PyTorch, and Python versions, which made it difficult to get YOLOv5 running correctly. We were able to run it but only to the point were the CPU runned the object detection model but not the GPU.
+
+Then we used YOLOv8 as an alternative, hoping it would be easier to use. But, once again dependency conflicts and and versions made it clear that the setup process was more complicated. We spend more 
+time troubleshooting the versions and installations than working on the object detection. This  taught me how important it is to plan for software compatibility early in any project.
+
+Then we started using Analytics version that already has compatible libraries and 
+dependencies. This  reduced the setup time and helped us focus on start testing the camera and on how to make the detection faster through GPU. This showed me how simplifying work helps when developing an environment
+to keep the project going on.
+
+This project gaved me hands-on exposure with edge computing AI using live video while using 
+the GPU performance metrics. Also working with Linux-based systems was a good practice, getting use to other type of
+systems. Overall we had a lot of troubleshoot which was a good practice.
+
+## Learning Plan
+I can definitely get better at confirming the packages compatibility and optimizing AI models. 
+I will like to be more capable with new model conversion techniques like ONNX and TensorRT,
+which are new to me but still important for neural networks on embedded devices.
+
+A good way if improving is by watching tutorials and practicing on my own through those tutorials
+to gain more experience. There are also NVIDIA’s online courses for the Jetson, on how to do inferencing correctly
+through TensorRT. I’ll look for more projects on edge comuting AI, so I can see how it properly
+comes to life in the real world.
+
+Finally, I want to practice running simple projects on other platforms and learn how to use better
+tools like jtop, and Nsight Systems. These are useful to analyze performance 
+and optimize the system even more.
+
