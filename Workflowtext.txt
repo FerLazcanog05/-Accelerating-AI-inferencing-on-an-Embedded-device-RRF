@@ -1,4 +1,6 @@
-GPU Inference Setup on Jetson Orin Nano
+Detail Outline of Generic Workflow on Jetson Orin Nano
+
+
 Step 1: Hardware Setup
 •	Device: NVIDIA Jetson Orin Nano
 •	Camera: USB UVC-compatible webcam (e.g., Logitech C920)
@@ -43,12 +45,6 @@ o	Check CUDA and PyTorch compatibility.
 o	Use dmesg to check GPU driver status.
 o	Ensure you're using the correct wheel from NVIDIA.
 If PyTorch remains incompatible with CUDA, consider switching to Ultralytics + TensorRT or ONNX workflows instead.
-
-
-
-
-
-
 
 
 
