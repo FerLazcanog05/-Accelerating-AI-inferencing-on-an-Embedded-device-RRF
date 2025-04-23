@@ -1,5 +1,8 @@
 # Ruber Learning Plan
 
+Throughout this project, I realized key gaps in my skills—particularly in working within a Linux environment and deploying AI models like YOLO on embedded hardware. Although I had previously used YOLO in software only environments, implementing it on a Jetson Nano exposed challenges I hadn’t faced before, such as camera integration, GPU optimization in hardware, and system-level deployment. These realizations led me to develop a structured learning plan to bridge these gaps and gain practical experience with real-time AI inference on edge devices.
+
+
 ### Phase 1: Linux & Command Line Fundamentals
 
 Begin by creating a solid grounding in Linux and its terminal environment. Learn to navigate through the Ubuntu file system while performing the common commands like cd, ls, pwd, and mkdir in the terminal,
