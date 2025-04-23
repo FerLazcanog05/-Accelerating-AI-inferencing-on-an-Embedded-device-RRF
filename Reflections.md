@@ -1,4 +1,4 @@
-#Ruber Reflection
+# Ruber Reflection
 
 This project made us realize how powerful and complicated it is to implement an AI model in embedded systems. The version compatibility problem, especially between PyTorch and CUDA, and Jetson hardware,
 was a major hurdle. Installation of a GPU-supported version of PyTorch was tedious and caused memory errors very often. Besides that, we had to deal with NumPy incompatibilities especially with ONNX and PyTorch
