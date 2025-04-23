@@ -45,6 +45,7 @@ TensorRT (for model optimization)
 
 Nsight Systems and Compute for performance profiling
 
+
 3. Hardware and Software Components
 Hardware:
 Jetson Orin Nano Developer Kit
@@ -75,6 +76,7 @@ YOLOv5 – Object detection framework.
 ONNX Runtime – Optional for model deployment in a lightweight, cross-framework way.
 
 Nsight Systems/Compute – For performance debugging and bottleneck identification.
+
 
 
 4. Choice of Pre-Trained Models and Rationale
