@@ -1,26 +1,94 @@
-Problem Statement
+Problem Statement and Discussion
 
-Object detection is one of the main tasks in computer vision, and it's used in lots of real-time systems like self-driving cars, robots, security cameras, and smart factories. Basically, it means being able to recognize and label objects in images or live video. But doing this in real time takes a lot of processing power.
-Usually, these kinds of AI tasks are run on powerful cloud servers. That works well, but it also comes with some issues, like needing a fast internet connection and dealing with delays when sending data back and forth. These delays can be a big problem for systems that need to make quick decisions on the spot.
-That’s where edge computing comes in. Instead of sending data to the cloud, we can run AI models directly on small, powerful devices right where the data is being collected by inferencing to pretrained models. In this project, we're working with the NVIDIA Jetson Orin Nano, which is a compact computer with a built-in GPU that’s great for running AI models faster.
-The goal of our project is to build a working prototype that uses this device to detect objects in real time from a live camera feed. We're using pre-trained AI models, some optimized software tools, and measuring how much faster and more efficient everything becomes when we run it on the Jetson. By the end, we want to show how much of a performance boost we get using parallel processing and GPU acceleration on an embedded device.
-
-Discussion
-
-Running AI models for object detection works really well with parallel processing. That’s because each video frame can be handled on its own, and even within a single frame, we can split the work, like cleaning up the image, running the AI model, and drawing boxes around detected objects, so it all happens at the same time across different parts of the hardware.
-The NVIDIA Jetson family, like the Jetson Orin Nano, is built for this kind of job. These devices have special parts like CUDA cores, Tensor cores, and AI accelerators that help take some of the load off the CPU and let things run much faster.
-
-For this project, we explored some tools in NVIDIA’s ecosystem to help us out:
-
-•	CUDA Toolkit: Helps us run tasks in parallel more efficiently.
-
-•	TensorRT: Speeds up AI model inference by making it lighter and faster to run.
-
-•	OpenCV: Takes care of handling the camera, images, and drawing results.
-
-•	YOLO: A popular object detection model that works well even on small devices like ours.
-
-•	Jtop: Too that let us measure performance and see where things might be slowing down.
+Real-time object detection is a critical component in many intelligent systems, including autonomous vehicles, industrial automation, security surveillance, and smart cities. The ability to not only recognize but also localize multiple objects within a scene enables machines to make fast, context-aware decisions.
 
 
-By using the Jetson Orin Nano, we want to prove that we can run object detection in real-time on a small, portable device without needing the cloud. If it works well, this kind of setup could be used in lots of real-world projects where speed and mobility are important.
+Traditionally, such AI-based processing is handled in the cloud due to the high computational demands. However, cloud-based inference introduces latency due to the need for constant communication between local devices and remote servers. In time-sensitive applications—like robotics or self-driving cars—such delays can pose serious challenges.
+
+
+Edge computing presents a promising alternative. By shifting AI workloads to local hardware, we eliminate dependence on network speed and cloud infrastructure. In this project, we leverage the NVIDIA Jetson Orin Nano, a compact yet powerful embedded system equipped with a GPU optimized for AI tasks. Our goal is to demonstrate real-time object detection using a live camera feed and highlight the performance benefits achieved through parallel processing and GPU acceleration at the edge.
+
+
+2. Initial Configuration and Setup
+
+The following steps summarize the setup of the Jetson Orin Nano for this project:
+
+Operating System:
+
+Installed Ubuntu 22.04.5 through NVIDIA JetPack 6.x, which comes with necessary drivers, libraries, and development tools.
+
+
+Python Environment:
+
+Set up using pyenv to ensure compatibility with JetPack and TensorRT versions. Python 3.9 was selected to match dependencies.
+
+
+Camera Configuration:
+
+Used OpenCV to interface with the CSI or USB camera and capture real-time video frames.
+
+Software Installations:
+
+CUDA Toolkit
+
+cuDNN (CUDA Deep Neural Network library)
+
+PyTorch (Jetson-compatible build)
+
+TorchVision
+
+OpenCV (with GStreamer support for camera handling)
+
+YOLOv5 repository (with ONNX export support)
+
+TensorRT (for model optimization)
+
+Nsight Systems and Compute for performance profiling
+
+3. Hardware and Software Components
+Hardware:
+Jetson Orin Nano Developer Kit
+
+USB or CSI Camera
+
+MicroSD or NVMe storage for OS and dependencies
+
+Active cooling (fan or heatsink)
+
+Power supply (rated ≥ 5V/4A)
+
+
+Software Frameworks and Libraries:
+
+CUDA Toolkit – Enables general-purpose GPU computing.
+
+cuDNN – Accelerates deep learning primitives like convolutions.
+
+TensorRT – Optimizes and accelerates AI inference.
+
+PyTorch & TorchVision – Deep learning framework and vision models.
+
+OpenCV – Handles video capture, preprocessing, and visualization.
+
+YOLOv5 – Object detection framework.
+
+ONNX Runtime – Optional for model deployment in a lightweight, cross-framework way.
+
+Nsight Systems/Compute – For performance debugging and bottleneck identification.
+
+
+4. Choice of Pre-Trained Models and Rationale
+
+For this project, we selected YOLOv5s (small variant) as the object detection model. The reasoning behind this choice includes:
+
+Speed: YOLOv5s is optimized for real-time performance and runs smoothly on embedded GPUs with limited resources.
+
+Accuracy: Offers a solid balance between speed and accuracy, suitable for many practical scenarios.
+
+Lightweight: Requires less memory and compute, making it ideal for the Jetson Orin Nano's embedded environment.
+
+ONNX Export Support: Easily exportable to the ONNX format for use with TensorRT.
+
+Community Support: Well-documented with a large open-source community, simplifying troubleshooting and customization.
+
+In future iterations, we may explore other variants like YOLOv8 or EfficientDet for use cases demanding either higher speed or improved accuracy.
