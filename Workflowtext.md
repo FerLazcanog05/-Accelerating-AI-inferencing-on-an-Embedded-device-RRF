@@ -72,6 +72,7 @@ Step3:Jetson Performance Mode-since run into Cublas memory Allocation Problem
 sudo nvpmodel -m 0
 sudo jetson_clocks
 Enables MAXN power mode and maximizes CPU/GPU clock speeds for optimal performance use yolo8n (lighther)
+no improment, use onnxruntime-gpu
 Step4:Model Export Using Ultralytics
 from ultralytics import YOLO
 model = YOLO("yolov8n.pt")
