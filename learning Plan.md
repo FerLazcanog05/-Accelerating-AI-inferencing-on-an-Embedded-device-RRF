@@ -20,7 +20,7 @@ will be the starter. Use utilities like v4l2-ctl, cheese, and guvcview to debug 
 ### Phase 4: YOLO and the AI Inference
 
 Real-time object detection with YOLO is the next step. Begin with understanding the YOLO (You Only Look Once) model family, having major interest in the distinctions between YOLOv5 and YOLOv8. YOLOv8,
-available via the Ultralytics library, is primarily one API for model training, exporting, and inference. Learn how to export YOLOv8 models to ONNX format and, therefore, convert them to TensorRT engines 
+available via the Ultralytics library. Learn how to export YOLOv8 models to ONNX format and, therefore, convert them to TensorRT engines 
 for faster GPU-based inference. Finally, check out some scripts that use cv2.imshow and model(source=0, stream=True) to visualize detections.
 
 ### Phase 5: Jetson Optimization & Deployment
