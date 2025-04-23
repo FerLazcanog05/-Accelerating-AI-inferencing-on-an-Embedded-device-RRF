@@ -3,7 +3,7 @@
 Real-time object detection is a critical component in many intelligent systems, including autonomous vehicles, industrial automation, security surveillance, and smart cities. The ability to not only recognize but also localize multiple objects within a scene enables machines to make fast, context-aware decisions.
 
 
-Traditionally, such AI-based processing is handled in the cloud due to the high computational demands. However, cloud-based inference introduces latency due to the need for constant communication between local devices and remote servers. In time-sensitive applications—like robotics or self-driving cars—such delays can pose serious challenges.
+Traditionally, such AI-based processing is handled in the cloud due to the high computational demands. However, cloud-based inference introduces latency due to the need for constant communication between local devices and remote servers. In time-sensitive applications, like robotics or self-driving cars, such delays can pose serious challenges.
 
 
 Edge computing presents a promising alternative. By shifting AI workloads to local hardware, we eliminate dependence on network speed and cloud infrastructure. In this project, we leverage the NVIDIA Jetson Orin Nano, a compact yet powerful embedded system equipped with a GPU optimized for AI tasks. Our goal is to demonstrate real-time object detection using a live camera feed and highlight the performance benefits achieved through parallel processing and GPU acceleration at the edge.
