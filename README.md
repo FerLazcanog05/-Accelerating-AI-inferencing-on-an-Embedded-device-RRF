@@ -1,4 +1,4 @@
-1. Problem Statement and Discussion
+# 1. Problem Statement and Discussion
 
 Real-time object detection is a critical component in many intelligent systems, including autonomous vehicles, industrial automation, security surveillance, and smart cities. The ability to not only recognize but also localize multiple objects within a scene enables machines to make fast, context-aware decisions.
 
@@ -9,7 +9,7 @@ Traditionally, such AI-based processing is handled in the cloud due to the high 
 Edge computing presents a promising alternative. By shifting AI workloads to local hardware, we eliminate dependence on network speed and cloud infrastructure. In this project, we leverage the NVIDIA Jetson Orin Nano, a compact yet powerful embedded system equipped with a GPU optimized for AI tasks. Our goal is to demonstrate real-time object detection using a live camera feed and highlight the performance benefits achieved through parallel processing and GPU acceleration at the edge.
 
 
-2. Initial Configuration and Setup
+# 2. Initial Configuration and Setup
 
 The following steps summarize the setup of the Jetson Orin Nano for this project:
 
@@ -46,7 +46,7 @@ TensorRT (for model optimization)
 Nsight Systems and Compute for performance profiling
 
 
-3. Hardware and Software Components
+# 3. Hardware and Software Components
 Hardware:
 Jetson Orin Nano Developer Kit
 
@@ -79,7 +79,7 @@ Nsight Systems/Compute – For performance debugging and bottleneck identificati
 
 
 
-4. Choice of Pre-Trained Models and Rationale
+# 4. Choice of Pre-Trained Models and Rationale
 
 For this project, we selected YOLOv5s (small variant) as the object detection model. The reasoning behind this choice includes:
 
