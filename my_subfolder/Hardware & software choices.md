@@ -1,4 +1,4 @@
-Summary of Research
+# Summary of Research
 
 Project Overview
 
