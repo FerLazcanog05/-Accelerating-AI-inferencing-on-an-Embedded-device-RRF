@@ -57,3 +57,19 @@ Hands-on mini-projects that focus on deploying different AI models across varied
 Collaboration among peers and mentors, especially with those who have experience in deploying edge AI systems in production environments. 
 
 This plan will see to it that the gaps in knowledge are filled in but also that long-term skills for scaling edge AI systems in real environments will be built.
+
+# Roberto Learning Plan
+
+I can definitely get better at confirming the packages compatibility and optimizing AI models. 
+I will like to be more capable with new model conversion techniques like ONNX and TensorRT,
+which are new to me but still important for neural networks on embedded devices.
+
+A good way if improving is by watching tutorials and practicing on my own through those tutorials
+to gain more experience. There are also NVIDIA’s online courses for the Jetson, on how to do inferencing correctly
+through TensorRT. I’ll look for more projects on edge comuting AI, so I can see how it properly
+comes to life in the real world.
+
+Finally, I want to practice running simple projects on other platforms and learn how to use better
+tools like jtop, and Nsight Systems. These are useful to analyze performance 
+and optimize the system even more.
+
