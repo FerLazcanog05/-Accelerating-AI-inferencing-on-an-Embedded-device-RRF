@@ -20,7 +20,7 @@ To close the skills gap, I created a structured learning plan divided into five 
 
 Despite the technical setbacks, I successfully deployed a YOLOv8 model on the Jetson Orin Nano for real-time object detection. The final implementation was fast, fully offline, and required no cloud support, demonstrating the ability of low-latency, private, edge AI applications. This experience taught me not only how to manage version compatibility and system resources, but also how to troubleshoot under hardware constraints and design for real-world scalability.
 
-This project proved that embedded AI is not only accessible, but increasingly practical for industry applications such as robotics, smart vision systems, and IoT. My hands-on involvement at every stage—from model research to hardware deployment—significantly advanced my skill set and gave me a clearer picture of what it means to build robust, real-time AI systems on the edge.
+This project proved that embedded AI is not only accessible, but increasingly practical for industry applications such as robotics, smart vision systems, and IoT. My hands-on involvement at every stage, from model research to hardware deployment, this significantly advanced my skill set and gave me a clearer picture of what it means to build robust, real-time AI systems on the edge.
 
 # Fernando Lazcano Reflection
 
