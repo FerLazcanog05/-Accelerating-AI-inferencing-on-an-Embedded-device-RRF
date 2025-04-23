@@ -89,16 +89,16 @@ o	TensorRT Documentation
 
 OpenCV: An open-source (free) library that helps us work with images and videos. In our project, we use it to grab video from the camera, edit or prepare the images (like resizing or turning them into grayscale), and draw boxes around things the AI detects. It’s super useful for managing all the visual stuff in our object detection system.
 
-#  OpenCV Installation on Orin Nano
+##  OpenCV Installation on Orin Nano
 
 ###  4. Object Detection Models
 YOLOv5: A super fast and accurate model for detecting objects in real time. It can quickly spot and label things in images or live video, which makes it perfect for devices like the Jetson Orin Nano. Even though it runs on a smaller device, it still gives good results and is easy to work with, so it’s a solid choice for our project.
 
-# YOLOv5 GitHub Repository
+### YOLOv5 GitHub Repository
 
-#  YOLOv5 Documentation
+###  YOLOv5 Documentation
 
-#  Training YOLOv5 on Custom Dataset
+##  Training YOLOv5 on Custom Dataset
 
 
 
