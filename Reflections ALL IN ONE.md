@@ -1,26 +1,26 @@
 # Ruber Reflection
 
-This project made me realize how powerful and complicated it is to implement an AI model in embedded systems. The version compatibility problem, especially between PyTorch and CUDA, and Jetson hardware,
-was a major hurdle. Installation of a GPU-supported version of PyTorch was tedious and caused memory errors very often. Besides that, we had to deal with NumPy incompatibilities especially with ONNX and PyTorch
-extensions, which required careful version control.
+This project was a valuable opportunity for me to apply and deepen my technical skills while also identifying key gaps in my knowledge. Although I had previously worked with YOLO in software environments, deploying it on Jetson hardware was a completely different challenge. I realized early on that my experience lacked the practical understanding required for Linux-based embedded deployment, version control across AI frameworks, and GPU optimization.
 
-We couldn't always rely upon GPU monitoring tools. For instance, jtop showed completely wrong values despite being use of TensorRT when noting down memory usage. So we had to find other tools such as tegrastats
-for accurate monitoring of the system. On the camera side, real-time video integration posed challenges, with color mismatches and some frame drops that we resolved using tools like v4l2-ctl and some tuning in
-OpenCV.
-There was a lot of trial and error when attempting to export the models into ONNX and TensorRT from YOLOv8. The process was laden with simplifications through the help of Ultralytics; however, many CUDA memory 
-allocation issues made the process quite a hassle as we had to experiment on how to export and simplify the models in a step-by-step fashion.
+My individual contributions centered around researching YOLOv8 implementation on Jetson devices, testing model conversion processes, and troubleshooting installation errors. I was responsible for exporting the YOLOv8 model to ONNX format and attempting to convert it to TensorRT for real-time inference. One of the major setbacks I faced was accidentally installing an incompatible version of PyTorch, which led to CUDA errors and broken dependencies. I spent time researching JetPack-compatible PyTorch builds and managing environment isolation to resolve these issues.
 
-The technical setbacks notwithstanding, the Jetson Orin Nano showed what on-edge AI is for, allowing us to run real-time object detection locally without dependence on any cloud service. This meant lower latency, 
-better privacy, and more dependability. 
+Additionally, I handled GPU performance tuning and monitoring. When jtop failed to report accurate memory usage during TensorRT inference, I discovered and implemented tegrastats as a more reliable alternative. I also configured camera input and addressed real-time video stream issues such as frame drops and color format mismatches using tools like v4l2-ctl and OpenCV’s color conversion functions.
 
-It may not only really improve inference speed while consuming fewer resources, but also fit robotics, smart cameras, and low-power deployments. When paired with innovative tools like Ultralytics and ONNX,
-the Jetson platform showed itself to be a small but mighty power house for rapid prototyping with AI.
+*To close the skills gap, I created a structured learning plan divided into five key phases:
 
-Final Thoughts
+*Mastering the Linux terminal and file system with Linux Journey and OverTheWire Bandit
 
-This taught us to persevere, to manage our versions, and to understand the system behavior of embedded AI. More than that, it proved how affordable and pragmatic edge computing has become, especially with key
-players in the industry that drive the vision such as Jetson.
+*Learning Jetson device architecture and flashing workflows via JetsonHacks GitHub
 
+*Integrating USB/CSI cameras using OpenCV and v4l2 utilities
+
+*Deploying YOLOv8 with Ultralytics, ONNX, and TensorRT
+
+*Automating deployment using systemd, and optimizing performance with nvpmodel and jetson_clocks
+
+Despite the technical setbacks, I successfully deployed a YOLOv8 model on the Jetson Orin Nano for real-time object detection. The final implementation was fast, fully offline, and required no cloud support—demonstrating the feasibility of low-latency, private, edge AI applications. This experience taught me not only how to manage version compatibility and system resources, but also how to troubleshoot under hardware constraints and design for real-world scalability.
+
+This project proved that embedded AI is not only accessible, but increasingly practical for industry applications such as robotics, smart vision systems, and IoT. My hands-on involvement at every stage—from model research to hardware deployment—significantly advanced my skill set and gave me a clearer picture of what it means to build robust, real-time AI systems on the edge.
 
 # Fernando Lazcano Reflection
 
