@@ -6,17 +6,17 @@ My individual contributions centered around researching YOLOv8 implementation on
 
 Additionally, I handled GPU performance tuning and monitoring. When jtop failed to report accurate memory usage during TensorRT inference, I discovered and implemented tegrastats as a more reliable alternative. I also configured camera input and addressed real-time video stream issues such as frame drops and color format mismatches using tools like v4l2-ctl and OpenCV’s color conversion functions.
 
-*To close the skills gap, I created a structured learning plan divided into five key phases:
+* To close the skills gap, I created a structured learning plan divided into five key phases:
 
-*Mastering the Linux terminal and file system with Linux Journey and OverTheWire Bandit
+* Mastering the Linux terminal and file system with Linux Journey and OverTheWire Bandit
 
-*Learning Jetson device architecture and flashing workflows via JetsonHacks GitHub
+* Learning Jetson device architecture and flashing workflows via JetsonHacks GitHub
 
-*Integrating USB/CSI cameras using OpenCV and v4l2 utilities
+* Integrating USB/CSI cameras using OpenCV and v4l2 utilities
 
-*Deploying YOLOv8 with Ultralytics, ONNX, and TensorRT
+* Deploying YOLOv8 with Ultralytics, ONNX, and TensorRT
 
-*Automating deployment using systemd, and optimizing performance with nvpmodel and jetson_clocks
+* Automating deployment using systemd, and optimizing performance with nvpmodel and jetson_clocks
 
 Despite the technical setbacks, I successfully deployed a YOLOv8 model on the Jetson Orin Nano for real-time object detection. The final implementation was fast, fully offline, and required no cloud support—demonstrating the feasibility of low-latency, private, edge AI applications. This experience taught me not only how to manage version compatibility and system resources, but also how to troubleshoot under hardware constraints and design for real-world scalability.
 
