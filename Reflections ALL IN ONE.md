@@ -4,7 +4,7 @@ This project was a valuable opportunity for me to apply and deepen my technical 
 
 My individual contributions centered around researching YOLOv8 implementation on Jetson devices, testing model conversion processes, and troubleshooting installation errors. I was responsible for exporting the YOLOv8 model to ONNX format and attempting to convert it to TensorRT for real-time inference. One of the major setbacks our team faced was accidentally installing an incompatible version of PyTorch, which led to CUDA errors and broken dependencies. We spent time researching JetPack-compatible PyTorch builds and managing environment isolation to resolve these issues.
 
-Additionally, I handled GPU performance tuning and monitoring. When jtop failed to report accurate memory usage during TensorRT inference, I discovered and implemented tegrastats as a more reliable alternative. I also configured camera input and addressed real-time video stream issues such as frame drops and color format mismatches using tools like v4l2-ctl and OpenCV’s color conversion functions.
+Additionally, I handled GPU performance monitoring. When jtop failed to report accurate memory usage during TensorRT inference, I discovered and implemented tegrastats as a more reliable alternative. I also configured camera input and addressed real-time video stream issues such as frame drops and color format mismatches using tools like v4l2-ctl and OpenCV’s color conversion functions.
 
 To close the skills gap, I created a structured learning plan divided into five key phases:
 
