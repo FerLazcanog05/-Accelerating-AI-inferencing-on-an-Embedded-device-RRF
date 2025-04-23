@@ -40,7 +40,7 @@ o	Hardware Specifications
 
 ##  Software Tools and Frameworks
 
-#  1. Operating System and SDK
+## 1. Operating System and SDK
 
 JetPack SDK: This is NVIDIA’s all-in-one software bundle made for Jetson devices. It gives us everything we need to get started with AI—like the Ubuntu operating system, tools to run code on the GPU (like CUDA), and libraries that help with deep learning (like TensorRT and cuDNN). It also includes support for using cameras and videos. Basically, it’s the main setup you need to build and run AI projects on the Jetson Orin Nano.
 
