@@ -1,4 +1,4 @@
-Problem Statement and Discussion
+1. Problem Statement and Discussion
 
 Real-time object detection is a critical component in many intelligent systems, including autonomous vehicles, industrial automation, security surveillance, and smart cities. The ability to not only recognize but also localize multiple objects within a scene enables machines to make fast, context-aware decisions.
 
