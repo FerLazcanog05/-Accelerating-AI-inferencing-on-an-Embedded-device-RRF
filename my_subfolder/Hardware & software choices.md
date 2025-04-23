@@ -1,6 +1,6 @@
 # Summary of Research
 
-# # Project Overview
+# #  Project Overview
 
 
 The goal of our project is to make AI run faster on small devices, especially for real-time object detection. That means finding the right hardware and software to help us run AI models directly on the device, instead of relying on big cloud servers. We chose the NVIDIA Jetson Orin Nano Developer Kit because it's powerful enough to handle AI tasks, doesn't use too much energy, and is pretty affordable, making it a great fit for edge computing projects like this one.
