@@ -56,17 +56,4 @@ This project gaved me hands-on exposure with edge computing AI using live video 
 the GPU performance metrics. Also working with Linux-based systems was a good practice, getting use to other type of
 systems. Overall we had a lot of troubleshoot which was a good practice.
 
-## Learning Plan
-I can definitely get better at confirming the packages compatibility and optimizing AI models. 
-I will like to be more capable with new model conversion techniques like ONNX and TensorRT,
-which are new to me but still important for neural networks on embedded devices.
-
-A good way if improving is by watching tutorials and practicing on my own through those tutorials
-to gain more experience. There are also NVIDIA’s online courses for the Jetson, on how to do inferencing correctly
-through TensorRT. I’ll look for more projects on edge comuting AI, so I can see how it properly
-comes to life in the real world.
-
-Finally, I want to practice running simple projects on other platforms and learn how to use better
-tools like jtop, and Nsight Systems. These are useful to analyze performance 
-and optimize the system even more.
 
