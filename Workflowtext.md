@@ -83,7 +83,7 @@ If PyTorch remains incompatible with CUDA, consider switching to Ultralytics + T
 
 
 
-# After running into compatibility issues between PyTorch and CUDA on Jetson Orin Nano, we switched to using Ultralytics, a Python package that simplifies the entire
+# After running into compatibility issues between PyTorch and CUDA on Jetson Orin Nano, we switched to using Ultralytics full package, a Python package that simplifies the entire
 YOLOv8 workflow. Ultralytics integrates model loading, training, exporting, and inference while also supporting TensorRT and ONNX. This allowed us to streamline
 installation, avoid version conflicts, and run real-time object detection using the onboard GPU. 
 Codes from: https://docs.ultralytics.com/es/guides/nvidia-jetson/#install-pytorch-and-torchvision 
