@@ -28,3 +28,29 @@ for faster GPU-based inference. Finally, check out some scripts that use cv2.ims
 Now that the detection is running, the next task is to optimize and automate it. Activate MAXN power mode via nvpmodel and jetson_clocks to unleash the full hardware performance. Supervise system activities
 using either jtop or tegrastats. Any time the system boots, automatically start the inference script via systemd. Detections may be optionally logged, along with real-time FPS counters. Compare the performance 
 between USB and CSI camera and accordingly optimize your system.
+
+# Fernando Lazcano Learning Plan
+
+## 1. Identified Knowledge Gaps and Experience Needs:
+Several knowledge gaps appeared during the development and testing of the real-time object detection system with the NVIDIA Jetson Orin Nano. For instance, CUDA programming and GPU memory management were rendered much more difficult to master for optimization of the inference performance of the models. Successful implementation was done in PyTorch and YOLOv5; however, ONNX conversion and TensorRT acceleration implementations highlighted a lack of experience in optimization techniques and hardware-specific deployment. Also, integration problems, as camera feed troubleshooting using OpenCV on embedded Linux, emerged from several challenges having to do with device drivers and frame processing.
+
+## 2. Skills and Expertise Needed for Industry Implementation or Scaling:
+Furthermore, in order to scale the above solution into an extended project or industrial application, additional skill sets would be of major importance. These would include:
+Advanced model optimization, such as TensorRT and quantization methods (FP16/INT8).
+Embedded systems development, including real-time operating systems and cross-compilation workflows.
+DevOps and CI/CD practices for efficient code handling, deployment automation, and system reliability assurance.
+Data pipeline designing for the effective handling and preprocessing of larger crowds of image or video data.
+Cybersecurity best practices to safeguard edge devices against vulnerabilities in the field.
+
+## 3. Training and Resources to Get Equipped:
+Gaps will be closed and capabilities supersized by seeking any or all of the following interventions and training: NVIDIA Deep Learning Institute (DLI) courses on Jetson AI Fundamentals, CUDA programming, and TensorRT deployment. 
+
+Coursera and Udemy courses on Embedded Linux, OpenCV, and advanced topics for PyTorch.
+
+JetsonHacks, Qengineering, and official NVIDIA forums offer tutorials, troubleshooting guides, and active developer communities. 
+
+Hands-on mini-projects that focus on deploying different AI models across varied embedded devices.
+
+Collaboration among peers and mentors, especially with those who have experience in deploying edge AI systems in production environments. 
+
+This plan will see to it that the gaps in knowledge are filled in but also that long-term skills for scaling edge AI systems in real environments will be built.
